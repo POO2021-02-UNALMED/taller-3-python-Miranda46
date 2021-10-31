@@ -32,6 +32,4 @@ class Control:
         tv._control=self
 
     def setCanal(self, canal):
-        if canal > 0 and canal < 121:
-            if self.tv.estado:
-                self.canal=canal
+        self.tv.setCanal(canal)
