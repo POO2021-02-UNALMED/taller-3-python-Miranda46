@@ -42,6 +42,10 @@ class TV:
     def getNumTV():
         return TV.numTV
 
+    @staticmethod
+    def setNumTV(numTV):
+        TV.numTV=numTV
+
     def canalUp(self):
         if self._estado:
             if self._canal<120:
@@ -70,7 +74,7 @@ class TV:
 
     def setCanal(self, canal):
         if canal > 0 and canal < 121:
-            if self.tv.estado:
+            if self.estado:
                 self.canal=canal
 
 
