@@ -1,7 +1,7 @@
 class Control:
 
-    def __init__(self, tv):
-        self.tv=tv
+    def __init__(self):
+        self.tv=None
     
     def canalUp(self):
         self.tv.canalUp()
